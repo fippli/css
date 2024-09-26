@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src=" https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js "></script>
+    <link
+      href=" https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css "
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="regular.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Pretty semantic HTML</h1>
+
+      <p>
+        <em
+          >There should be no need for complicated CSS to make some HTML look
+          good. This is made for you if you just want to write some semantic
+          HTML and not care.
+        </em>
+      </p>
+
+      <h2>This is some kind of meta documentation</h2>
+
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum vel turpis sollicitudin, porttitor
+        nulla eget, egestas ante. Vivamus tristique, sapien vitae blandit
+        pellentesque, ante massa dapibus turpis, id sagittis leo ipsum vitae
+        enim. Maecenas pharetra at lectus ac tristique. Aliquam gravida sem ac
+        diam blandit, ac pulvinar mauris interdum. Morbi odio purus, fermentum
+        ac consectetur eget, volutpat eu sem. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque
+        vestibulum gravida justo ac accumsan. Vivamus vitae lacus augue. Fusce
+        ultrices vel magna id pulvinar. Maecenas non rhoncus augue.
+      </p>
+
+      <h3>A note on code blocks</h3>
+
+      <p>
+        The code blocks have some syntax highlighting using Prism.js. Prism.js
+        has its own style.
+      </p>
+
+      <h2>Images</h2>
+      <figure>
+        <img src="./cat.JPG" alt="A cat thinking about his life choices" />
+        <figcaption>A cat thinking about his life choices</figcaption>
+      </figure>
+
+      <pre><code class="language-html">
+&lt;figure&gt;
+&nbsp;&nbsp;&lt;img src="./cat.JPG" alt="A cat thinking about his life choices" /&gt;
+&nbsp;&nbsp;&lt;figcaption&gt;A cat thinking about his life choices&lt;/figcaption&gt;
+&lt;/figure&gt;
+        </code></pre>
+
+      <h2>Forms</h2>
+
+      <form>
+        <label for="text">Text input</label>
+        <input type="text" placeholder="Text input" id="text" />
+
+        <label for="password">Password input</label>
+        <input type="password" placeholder="" id="password" />
+
+        <label for="email">Email input</label>
+        <input type="email" placeholder="Email input" id="email" />
+
+        <label for="file-upload">
+          <input type="file" id="file-upload" />
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
