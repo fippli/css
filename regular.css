@@ -14,15 +14,16 @@ body {
   font-family: "Poppins";
 
   /* Colors */
-  --color-black: #000000;
+  --color-black: #12131c;
   --color-white: #ffffff;
-  --color-gray: #f5f5f5;
-  --color-green: #00ff00;
-  --color-red: #ff0000;
-  --color-blue: #0000ff;
-  --color-yellow: #ffff00;
+  --color-gray: #f8f8f8;
   --color-orange: #ffa500;
-  --color-purple: #800080;
+  --color-yellow: #f2f3b4;
+  --color-green: #b6eebd;
+  --color-purple: #c4c7fa;
+
+  --color-blue: #0000ff;
+  --color-red: #ff0000;
   --color-pink: #ff69b4;
 
   /* Margins */
@@ -34,6 +35,9 @@ body {
   --radius-small: 4px;
   --radius-medium: 8px;
   --radius-large: 16px;
+
+  /* Weights */
+  --button-font-weight: 600;
 
   /* Styling */
 }
@@ -87,9 +91,12 @@ h1 {
   margin-bottom: var(--spacing-large);
 }
 h2 {
+  font-size: 40px;
   margin: var(--spacing-large) 0 var(--spacing-medium) 0;
 }
 h3 {
+  font-size: 28px;
+  margin: var(--spacing-medium) 0 var(--spacing-small) 0;
 }
 h4 {
 }
@@ -102,8 +109,8 @@ p {
   font-size: 16px;
   line-height: 1.8rem;
   word-spacing: 2px;
-  letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #000000ee;
 }
 a {
 }
@@ -134,6 +141,17 @@ form {
   flex-direction: column;
 }
 
+fieldset {
+  padding: var(--spacing-large);
+  border-radius: var(--radius-medium);
+  border: 1px solid #00000011;
+}
+
+legend {
+  padding: 0 var(--spacing-medium); /* Add some padding */
+  font-weight: bold; /* Make the text bold */
+}
+
 label {
   display: block;
   flex: 1;
@@ -151,6 +169,7 @@ input {
   padding: var(--spacing-small) var(--spacing-medium);
   border: none;
   background-color: var(--color-gray);
+  font-family: "Poppins";
 }
 
 input:active input:focus {
@@ -161,6 +180,14 @@ input:active input:focus {
 
 input[type="password"] {
   letter-spacing: 3px;
+}
+
+input[type="submit"] {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  cursor: pointer;
+  width: max-content;
+  font-weight: var(--button-font-weight);
 }
 
 /* File upload */
@@ -182,10 +209,8 @@ label:has(input[type="file"]) {
   padding: var(--spacing-small) var(--spacing-medium);
   background-color: var(--color-black);
   color: var(--color-white);
-}
-
-label:has(input[type="file"])::after {
-  content: "Upload file";
+  text-transform: none;
+  font-weight: var(--button-font-weight);
 }
 
 button {
