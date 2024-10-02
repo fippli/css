@@ -14,8 +14,18 @@
     <link rel="stylesheet" href="regular.css" />
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#table">Tables</a>
+      </nav>
+    </header>
+
     <main>
       <h1>Pretty semantic HTML</h1>
+
 
       <p>
         <em
@@ -74,6 +84,53 @@
           <input type="submit"></input>
         </form>
       </fieldset>
+
+      <fieldset id="contact">
+        <legend>Contact</legend>
+        <form>
+          <label for="text">Name</label>
+          <input type="text" placeholder="John Doe" id="name" />
+
+          <label for="email">Email</label>
+          <input type="email" placeholder="your.email@foo.com" id="email" />
+
+          <label for="message">Message</label>
+          <textarea  placeholder="" id="message" ></textarea>
+
+          <label for="file-upload">
+            Attach a file
+            <input type="file" id="file-upload" />
+          </label>
+
+          <input type="submit" value="Send" />
+        </form>
+      </fieldset>
+
+      <h2 id="table">Tables</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+      </table> 
     </main>
 
     <footer></footer>
