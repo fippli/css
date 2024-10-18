@@ -26,7 +26,6 @@
     <main>
       <h1>Pretty semantic HTML</h1>
 
-
       <p>
         <em
           >There should be no need for complicated CSS to make some HTML look
@@ -50,10 +49,10 @@
       <h3>To do</h3>
 
       <p>
-        Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque
-        vestibulum gravida justo ac accumsan. Vivamus vitae lacus augue. Fusce
-        ultrices vel magna id pulvinar. Maecenas non rhoncus augue.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos. Pellentesque vestibulum gravida justo ac accumsan.
+        Vivamus vitae lacus augue. Fusce ultrices vel magna id pulvinar.
+        Maecenas non rhoncus augue.
       </p>
 
       <h2>Images</h2>
@@ -61,7 +60,6 @@
         <img src="./cat.JPG" alt="A cat thinking about his life choices" />
         <figcaption>A cat thinking about his life choices</figcaption>
       </figure>
-
 
       <h2>Forms</h2>
       <fieldset>
@@ -81,7 +79,7 @@
             <input type="file" id="file-upload" />
           </label>
 
-          <input type="submit"></input>
+          <input type="submit" />
         </form>
       </fieldset>
 
@@ -95,7 +93,7 @@
           <input type="email" placeholder="your.email@foo.com" id="email" />
 
           <label for="message">Message</label>
-          <textarea  placeholder="" id="message" ></textarea>
+          <textarea placeholder="" id="message"></textarea>
 
           <label for="file-upload">
             Attach a file
@@ -130,7 +128,33 @@
             <td>$180</td>
           </tr>
         </tfoot>
-      </table> 
+      </table>
+
+      <h2>Ordered list</h2>
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+      <h2>Unordered list</h2>
+      <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+
+      <h2>Code</h2>
+      <h3>Code block</h3>
+      For when the code stuff spans over a lot of lines like
+      <pre><code class="language-javascript">const identity = function(x) {
+  return x;
+}</code></pre>
+      The markup gets a bit messed up if you want to avoid lines in your code
+      block. Look at the code in this document to get it right.
+      <h3>Inline code</h3>
+      If you ever want to describe the identity function
+      <code class="language-javascript">function f(x) { return x; }</code> in
+      the middle of it all.
     </main>
 
     <footer></footer>
