@@ -24,9 +24,10 @@ body {
   --color-orange: #ffa500;
   --color-yellow: #f2f3b4;
   --color-green: #b6eebd;
-  --color-purple: #c4c7fa;
+  --color-purple: #9368e8;
 
-  --color-blue: #0000ff;
+  --color-blue: #293be0;
+  --color-blue-light: #5e6ce8;
   --color-red: #ff0000;
   --color-pink: #ff69b4;
 
@@ -62,7 +63,9 @@ body {
   box-sizing: border-box;
 }
 
-/**/
+/* 
+ * Header 
+ */
 header {
   display: flex;
   width: 100%;
@@ -73,6 +76,13 @@ header {
   top: 0;
   left: 0;
   background-color: var(--color-white);
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    justify-content: flex-start;
+    padding: var(--spacing-medium) var(--spacing-large);
+  }
 }
 
 nav {
@@ -103,6 +113,10 @@ nav a:hover {
   color: var(--color-black-hover);
 }
 
+nav a:visited {
+  color: var(--color-black);
+}
+
 nav a:hover:after {
   transform: scaleX(1);
 }
@@ -114,6 +128,13 @@ main {
   margin: 0 auto;
   padding-top: var(--spacing-large);
   padding-bottom: var(--spacing-large);
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: var(--spacing-large);
+    padding-top: 0;
+  }
 }
 
 /**/
@@ -165,6 +186,15 @@ p {
   color: #000000ee;
 }
 a {
+  color: var(--color-blue);
+}
+
+a:visited {
+  color: var(--color-purple);
+}
+
+a:hover {
+  color: var(--color-blue-light);
 }
 
 /* Lists */
@@ -226,6 +256,13 @@ fieldset {
   border-radius: var(--radius-medium);
   border: 1px solid #00000011;
   margin-bottom: var(--spacing-medium);
+}
+
+@media only screen and (max-width: 600px) {
+  fieldset {
+    padding: var(--spacing-medium);
+    min-width: auto;
+  }
 }
 
 legend {
@@ -375,4 +412,5 @@ code {
   line-height: 1.4rem;
   border-radius: var(--radius-small);
   font-size: 0.8rem !important;
+  display: inline-block;
 }
