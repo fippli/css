@@ -2,4 +2,4 @@
 
 Beautiful style for semantic `HTML`
 
-[example](fippli.se/css)
+[example](https://fippli.se/css)
