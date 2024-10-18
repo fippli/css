@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
 
+  --font-mono: "Fira Code", monospace;
   font-family: "Poppins";
 
   /* Colors */
@@ -168,9 +169,11 @@ a {
 
 /* Lists */
 ul {
+  padding-left: var(--spacing-large);
 }
 
 ol {
+  padding-left: var(--spacing-large);
 }
 
 li {
@@ -362,12 +365,13 @@ pre code {
   font-family: monospace;
   line-height: 1.4rem;
   font-size: 0.8rem !important;
+  font-family: var(--font-mono) !important;
 }
 
 code {
   background-color: var(--color-gray);
   padding: 4px !important;
-  font-family: monospace;
+  font-family: var(--font-mono) !important;
   line-height: 1.4rem;
   border-radius: var(--radius-small);
   font-size: 0.8rem !important;
