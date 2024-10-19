@@ -13,8 +13,16 @@ body {
   margin: 0;
   padding: 0;
 
-  --font-mono: "Fira Code", monospace;
   font-family: "Poppins";
+  --font-title: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "Fira Code", monospace;
+  --font-size-xsmall: 16px;
+  --font-size-small: 20px;
+  --font-size-medium: 28px;
+  --font-size-large: 40px;
+  --font-size-xlarge: 64px;
+  --font-size-button: 13px;
 
   /* Colors */
   --color-black: #12131c;
@@ -45,11 +53,6 @@ body {
 
   /* Weights */
   --button-font-weight: 600;
-
-  --font-size-small: 20px;
-  --font-size-medium: 28px;
-  --font-size-large: 40px;
-  --font-size-button: 13px;
 
   /* Shadows */
   --box-shadow-button: 0 0 6px 0 rgba(0, 0, 0, 0.3);
@@ -153,12 +156,12 @@ h5,
 h6 {
   font-weight: 700;
   margin: 0 0 var(--spacing-medium) 0;
-  font-family: "Poppins";
+  font-family: var(--font-title);
   color: var(--color-black);
 }
 
 h1 {
-  font-size: 64px;
+  font-size: var(--font-size-xlarge);
   border-bottom: 1px solid #00000022;
   padding-bottom: var(--spacing-medium);
   margin-bottom: var(--spacing-large);
@@ -177,9 +180,22 @@ h5 {
 }
 h6 {
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: var(--font-size-large);
+  }
+  h2 {
+    font-size: var(--font-size-medium);
+  }
+  h3 {
+    font-size: var(--font-size-small);
+  }
+}
+
 p {
-  font-family: "Inter";
-  font-size: 16px;
+  font-family: var(--font-body);
+  font-size: var(--font-size-xsmall);
   line-height: 1.8rem;
   word-spacing: 2px;
   font-weight: 400;
@@ -258,17 +274,20 @@ fieldset {
   margin-bottom: var(--spacing-medium);
 }
 
+legend {
+  padding: 0 var(--spacing-medium); /* Add some padding */
+  font-weight: bold; /* Make the text bold */
+  font-size: var(--font-size-medium);
+}
+
 @media only screen and (max-width: 600px) {
   fieldset {
     padding: var(--spacing-medium);
     min-width: auto;
   }
-}
-
-legend {
-  padding: 0 var(--spacing-medium); /* Add some padding */
-  font-weight: bold; /* Make the text bold */
-  font-size: var(--font-size-medium);
+  legend {
+    font-size: var(--font-size-small);
+  }
 }
 
 label {
