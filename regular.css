@@ -422,6 +422,7 @@ pre code {
   line-height: 1.4rem;
   font-size: 0.8rem !important;
   font-family: var(--font-mono) !important;
+  max-width: 100%;
 }
 
 code {
@@ -432,4 +433,11 @@ code {
   border-radius: var(--radius-small);
   font-size: 0.8rem !important;
   display: inline-block;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  code {
+    word-wrap: break-word;
+  }
 }
