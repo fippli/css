@@ -339,6 +339,24 @@ input[type="submit"]::before {
   margin-right: var(--spacing-small);
 }
 
+/* Checkbox */
+label:has(input[type="checkbox"]) {
+  font-weight: 400;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-xsmall);
+  line-height: 1.8rem;
+  word-spacing: 2px;
+  font-weight: 400;
+  color: #000000ee;
+  text-transform: none;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  margin-right: 4px;
+}
+
 /* File upload */
 input[type="file"] {
   display: none;
