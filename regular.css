@@ -25,6 +25,8 @@ body {
   --font-size-button: 13px;
 
   /* Colors */
+  --color-body: #3c3c43;
+
   --color-black: #12131c;
   --color-black-hover: #1e2030;
   --color-white: #ffffff;
@@ -196,10 +198,10 @@ h6 {
 p {
   font-family: var(--font-body);
   font-size: var(--font-size-xsmall);
-  line-height: 1.8rem;
+  line-height: 28px;
   word-spacing: 2px;
   font-weight: 400;
-  color: #000000ee;
+  color: var(--color-body);
 }
 a {
   color: var(--color-blue);
@@ -224,6 +226,7 @@ ol {
 
 li {
   margin-bottom: var(--spacing-small);
+  color: var(--color-body);
 }
 
 /* Tables */
@@ -348,7 +351,7 @@ label:has(input[type="checkbox"]) {
   line-height: 1.8rem;
   word-spacing: 2px;
   font-weight: 400;
-  color: #000000ee;
+  color: var(--color-body);
   text-transform: none;
 }
 
