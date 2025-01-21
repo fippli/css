@@ -462,3 +462,10 @@ code {
     word-wrap: break-word;
   }
 }
+
+/* Misc */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #00000022;
+}
