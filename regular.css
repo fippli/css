@@ -57,7 +57,7 @@ body {
   --button-font-weight: 600;
 
   /* Shadows */
-  --box-shadow-button: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  --box-shadow-button: 0 0 6px 0px #1e203066;
 
   /* Styling */
 }
@@ -342,6 +342,11 @@ input[type="submit"]::before {
   margin-right: var(--spacing-small);
 }
 
+input[type="submit"]:hover {
+  background-color: var(--button-hover-color);
+  box-shadow: var(--box-shadow-button);
+}
+
 /* Checkbox */
 label:has(input[type="checkbox"]) {
   font-weight: 400;
@@ -411,7 +416,20 @@ label:has(input[type="file"]):hover {
 }
 
 button {
+  color: var(--color-white);
   font-size: var(--font-size-button);
+  font-weight: var(--button-font-weight);
+  text-align: center;
+  border: none;
+  background-color: var(--color-black);
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: var(--radius-small);
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: var(--box-shadow-button);
+  background-color: var(--button-hover-color);
 }
 
 /* Images */
