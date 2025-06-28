@@ -12,6 +12,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 
   font-family: "Poppins";
   --font-title: "Poppins", sans-serif;
@@ -129,6 +130,7 @@ nav a:hover:after {
 /**/
 
 main {
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
   padding-top: var(--spacing-large);
