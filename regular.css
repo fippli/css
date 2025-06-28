@@ -489,3 +489,7 @@ hr {
   height: 1px;
   background-color: #00000022;
 }
+
+article {
+  width: 100%;
+}
